@@ -1,13 +1,20 @@
 # -*- coding:UTF-8 -*-
 import streamlit as st
-from PIL import Image
 import numpy as np
 import pandas as pd
+from PIL import Image
+from streamlit_option_menu import option_menu
 from description import run_description
 from data import run_data
-from ml_app import run_ml_app
-from streamlit_option_menu import option_menu
 from eda_app import run_eda
+from stat_app import run_status
+from stat_app import run_stat_box
+from ML import run_mls
+from ML import feautreImportancePlot
+from ML import run_model
+from ML import prediction
+from ML import prediction_plot
+from ML import run_ml
 
 # Confit
 st.set_page_config(page_title='Parkinson Disease Progression Prediction', page_icon=':medical_symbol:')
@@ -15,9 +22,9 @@ st.set_page_config(page_title='Parkinson Disease Progression Prediction', page_i
 
 def main():
     with st.sidebar:
-        selected = option_menu("Main Menu", ['Home', 'Description', 'Data', 'EDA', 'STAT'],
-                icons=['house', 'card-checklist', 'card-checklist', 'bar-chart', 'clipboard-data'],
-                menu_icon="cast", default_index=0, orientation = 'vertical')
+        selected = option_menu("Main Menu", ['Home', 'Description', 'Data', 'EDA', 'STAT', 'ML'],
+                icons=['house', 'card-checklist', 'folder-symlink', 'bar-chart', 'clipboard-data', 'motherboard'],
+                menu_icon="list", default_index=0, orientation = 'vertical')
 
     if selected == 'Home':
         st.markdown("<h1 style='text-align: center; color: darkblue;'>AMP®-Parkinson's </span><span style='text-align: center; color: darkmagenta;'>Disease Progression Prediction</span>",
@@ -81,7 +88,10 @@ def main():
     elif selected == 'EDA':
         run_eda()
     elif selected == 'STAT':
-        pass
+        run_status()
+    elif selected == 'ML':
+        run_mls()
+
     else:
         print('error..')
 
