@@ -1,7 +1,7 @@
 # Parkinson Project (2023.04.24 ~ 2023.05.17)
 
 [대시보드 링크](https://kimmeatan-kaggle-p-app-pjrdqh.streamlit.app/) <br/><br/>
-[포트폴리오](pdf/2조_파킨슨_질병_진단예측.pdf)<br/><br/>
+[포트폴리오](https://github.com/kimmeatan/kaggle_p/blob/main/%ED%8C%8C%ED%82%A8%EC%8A%A8%20%EC%A7%88%EB%B3%91%20%EC%A7%84%EB%8B%A8%20%EC%98%88%EC%B8%A1.pdf)<br/><br/>
 ![screensh](img/홈페이지.png)
 
 ## 목적
