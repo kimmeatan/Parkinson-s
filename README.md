@@ -18,7 +18,7 @@
 
 - 사용언어 : Python 3.9.13v
 - 작업 툴 : google colab, pycharm, kaggle
-- 인원 : 6명
+- 인원 : 5명
 - 주요 업무 : Streamlit 라이브러리를 이용한 웹개발 구현 코드 작성 및 머신러닝을 활용한 파킨슨 질병 진단 예측
 - 기간 : 2023-04-27 ~ 2023-05-16 
 - 
@@ -63,7 +63,7 @@
 
 - 프로젝트 파일을 다운로드 받습니다.
 ```
-git clone https://github.com/KingBeeM/storesales_streamlit_by_Kaggle.git
+git clone https://github.com/kimmeatan/storesales_streamlit_by_Kaggle.git
 ```
 - 프로젝트 경로에서 가상환경 설치 후 접속합니다. (Windows 10 기준)
 ```
